@@ -17,13 +17,13 @@ jobs:
       
     - name: Install dependencies
       run: |
-        cd /root/main
-        npm install
+        sudo cd /root/main
+        sudo npm install
 
     - name: Build
       run: |
-        cd /root/main
-        npm run build
+        sudo cd /root/main
+        sudo npm run build
 
     - name: Deploy
       uses: easingthemes/ssh-deploy@v2.1.5
