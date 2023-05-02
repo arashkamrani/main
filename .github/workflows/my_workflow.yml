@@ -24,7 +24,7 @@ jobs:
 
     - name: Build
       run: |
-        cd /root/main
+        sudo -s cd /root/main
         npm run build
 
     - name: Deploy
